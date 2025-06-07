@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="robots" content="noindex" />
+    <title>Rui Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="l-header p-header">
+      <div class="p-header_inner">
+        <h1 class="p-header_logo">
+          <a href="">
+            RUI<br />
+            HOSOE
+          </a>
+        </h1>
+        <button type="button" class="p-header_btn" id="js-header-btn">
+          <span class="p-header_btn-line"></span>
+          <span class="p-header_btn-line"></span>
+          <span class="p-header_btn-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="l-drawer p-drawer" id="js-drawer">
+      <a href="#" class="p-drawer__menu">About</a>
+      <a href="#" class="p-drawer__menu">Works</a>
+      <a href="#" class="p-drawer__menu">Skills</a>
+      <a href="#" class="p-drawer__menu">Contact</a>
+    </div>
+
+    <main>
+      <section class="l-works-page-mv u-js-fade">
+        <div class="l-works-page-mv__inner l-inner">
+          <div class="p-display-card">
+            <div class="c-display">
+              <div class="c-display__wrapper">
+                <img src="./img/pc-frame.png" alt="" class="c-display__frame" />
+                <div class="c-display__content">
+                  <img src="./img/PC-site.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="p-display-card__text">
+              <div class="c-meta">
+                <p class="c-meta__genre">Type:</p>
+                <p class="c-meta__date">Corporate site</p>
+              </div>
+              <div class="c-meta">
+                <p class="c-meta__genre">Projects:</p>
+                <p class="c-meta__date">スクール課題</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-works-spec l-section u-js-fade">
+        <div class="l-works-spec__inner l-inner">
+          <div class="p-works-summary l-works-spec__summary">
+            <div class="p-works-summary__content">
+              <div class="c-display c-display--sp p-works-summary__display">
+                <div class="c-display__wrapper c-display__wrapper--sp">
+                  <img
+                    src="./img/SP-frame.png"
+                    alt=""
+                    class="c-display__frame c-display__frame--sp"
+                  />
+                  <div class="c-display__content c-display__content--sp">
+                    <img src="./img/SP-site.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="c-spec p-works-summary__spec">
+                <dl class="c-kv c-spec__list">
+                  <dt class="c-kv__key">概要</dt>
+                  <dd class="c-kv__val">〇〇サイト（架空）</dd>
+                </dl>
+                <dl class="c-kv c-spec__list">
+                  <dt class="c-kv__key">制作期間</dt>
+                  <dd class="c-kv__val">〇〇ヶ月</dd>
+                </dl>
+                <dl class="c-kv c-spec__list">
+                  <dt class="c-kv__key">作業範囲</dt>
+                  <dd class="c-kv__val">
+                    コーディング（レスポンシブ含む）、Wordpress
+                  </dd>
+                </dl>
+                <dl class="c-kv c-spec__list">
+                  <dt class="c-kv__key">使用ツール</dt>
+                  <dd class="c-kv__val">〇〇〇〇〇〇</dd>
+                </dl>
+                <dl class="c-kv c-spec__list">
+                  <dt class="c-kv__key">URL</dt>
+                  <dd class="c-kv__val">https://example.com</dd>
+                </dl>
+              </div>
+            </div>
+            <dl class="c-kv p-works-summary__text">
+              <dt class="c-kv__key">制作時のこだわり</dt>
+              <dd class="c-kv__val">
+                こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。こだわった部分をここに書いていきます。
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-works-design l-section u-title-bar u-js-fade">
+        <div class="l-works-design__inner l-inner">
+          <div class="c-section-heading l-works-design__heading">
+            <h2 class="c-section-heading__main">でざいん</h2>
+            <p class="c-section-heading__sub">Design</p>
+          </div>
+
+          <div class="swiper p-design-swiper l-works-design__swiper">
+            <div class="swiper-wrapper p-design-swiper__wrapper">
+              <div class="swiper-slide p-design-swiper__slide">
+                <img src="./img/about-img.jpg" alt="" />
+              </div>
+              <div class="swiper-slide p-design-swiper__slide">
+                <img src="./img/about-img.jpg" alt="" />
+              </div>
+              <div class="swiper-slide p-design-swiper__slide">
+                <img src="./img/about-img.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination p-design-swiper__pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-footer">
+        <div class="l-footer__inner">
+          <div class="p-footer">
+            <div class="p-footer__wrapper">
+              <div class="p-footer__nav">
+                <div class="c-section-links">
+                  <ul class="c-section-links__list">
+                    <li class="c-section-links__item">
+                      <a
+                        href="#"
+                        class="c-section-links__link u-hover-opacity--black"
+                        >About</a
+                      >
+                    </li>
+                    <li class="c-section-links__item">
+                      <a
+                        href="#"
+                        class="c-section-links__link u-hover-opacity--black"
+                        >Works</a
+                      >
+                    </li>
+                    <li class="c-section-links__item">
+                      <a
+                        href="#"
+                        class="c-section-links__link u-hover-opacity--black"
+                        >Skills</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-footer__contact-links">
+                <p class="p-footer__contact-links-title">Contact</p>
+                <div class="c-contact-links">
+                  <a
+                    href="mailto:liuyixijiang@gmail.com"
+                    class="c-contact-links__item u-hover-opacity--black"
+                    >liuyixijiang@gmail.com</a
+                  >
+                  <a
+                    href="https://twitter.com/yourtwitter"
+                    class="c-contact-links__item u-hover-opacity--black"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="https://github.com/yourgithub"
+                    class="c-contact-links__item u-hover-opacity--black"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <small class="p-footer__copyright">
+              &copy;All Rights Reserved 2025 ©︎ Rui Hosoe
+            </small>
+          </div>
+        </div>
+      </section>
+
+      <div class="c-page-top-btn" id="js-pagetop">
+        <a href="#"><img src="./img/page-top-btn.png" alt="" /></a>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

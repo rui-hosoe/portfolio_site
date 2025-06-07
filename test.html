@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>縦スクロールトリガーバイオグラフィーサンプル</title>
+    <style>
+      /* ページ全体の余白をリセット */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      /* バイオグラフィーセクションのスタイル */
+      .bio-section {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* ビューポートの高さに合わせる */
+        overflow: hidden;
+        background-color: #f0f0f0;
+      }
+      /* 縦スクロール用コンテンツのスタイル（縦方向に並べる） */
+      .bio-content {
+        display: flex;
+        flex-direction: column;
+      }
+      /* 経歴（各バイオグラフィー項目）のスタイル */
+      .bio-item {
+        width: 100%;
+        height: 100vh; /* 1画面分の高さ */
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 1.5em;
+        line-height: 1.2;
+      }
+      /* サンプル用の次ページコンテンツ */
+      .next-section {
+        height: 100vh;
+        background-color: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- バイオグラフィーセクション -->
+    <section class="bio-section">
+      <div class="bio-content">
+        <div class="bio-item">経歴 1: 初期の経験や学びについて</div>
+        <div class="bio-item">経歴 2: 次の挑戦と成長の軌跡</div>
+        <div class="bio-item">経歴 3: 現在の業績と未来への展望</div>
+      </div>
+    </section>
+
+    <!-- 固定解除後に表示される次のページコンテンツ -->
+    <div class="next-section">その他のページコンテンツ</div>
+
+    <!-- GSAPとScrollTriggerの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+      // GSAPのScrollTriggerプラグインを登録
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 縦スクロール対象の要素を取得
+      const bioContent = document.querySelector(".bio-content");
+      const totalHeight = bioContent.scrollHeight; // コンテンツ全体の高さ
+      const windowHeight = window.innerHeight; // ビューポートの高さ
+
+      // 縦スクロールアニメーションの設定
+      gsap.to(".bio-content", {
+        // コンテンツを上方向に移動させる（移動距離はコンテンツ全体の高さからビューポートの高さを引いた分）
+        y: () => -(totalHeight - windowHeight),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".bio-section", // 対象となるセクション
+          pin: true, // セクションを固定
+          scrub: true, // スクロールとアニメーションを同期
+          // アニメーションが完了するスクロール量を設定
+          end: () => "+=" + (totalHeight - windowHeight),
+        },
+      });
+    </script>
+  </body>
+</html>

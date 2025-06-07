@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="robots" content="noindex" />
+    <title>Rui Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <!-- SplitType（テキスト分割） -->
+  <script src="https://unpkg.com/split-type"></script>
+  <body>
+    <div class="l-header p-header">
+      <div class="p-header_inner">
+        <h1 class="p-header_logo">
+          <a href="">
+            RUI<br />
+            HOSOE
+          </a>
+        </h1>
+        <button type="button" class="p-header_btn" id="js-header-btn">
+          <span class="p-header_btn-line"></span>
+          <span class="p-header_btn-line"></span>
+          <span class="p-header_btn-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="l-drawer p-drawer" id="js-drawer">
+      <a href="#" class="p-drawer__menu">About</a>
+      <a href="#" class="p-drawer__menu">Works</a>
+      <a href="#" class="p-drawer__menu">Skills</a>
+      <a href="#" class="p-drawer__menu">Contact</a>
+    </div>
+
+    <main>
+      <section class="l-mv">
+        <div class="p-mv">
+          <div class="p-mv__img"></div>
+          <h2 class="p-mv__text js-hero-text">
+            L'homme est un roseau pensant <br />
+             - Rui Portfolio / Web Corder -
+          </h2>
+          <div class="p-mv__overlay">
+            <p class="p-mv__overlay-text">
+              限りある力でも、思考が可能性を広げる。<br />
+              考え抜いた工夫で、快適なWebをつくる。<br />
+              私も、考え続ける者でありたい。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-about l-section u-js-fade">
+        <div class="l-about__inner l-inner">
+          <div class="p-about">
+            <div class="p-about__content p-about-content">
+              <div class="c-section-heading p-about-content__heading">
+                <h2 class="c-section-heading__main">
+                  わたしの<br class="u-sp-hidden" />こと
+                </h2>
+                <p class="c-section-heading__sub">About</p>
+              </div>
+              <div class="p-about-content__name">
+                <span class="p-about-content__name-romaji">Hosoe Rui</span>
+                <span class="p-about-content__name-kanji">細江 瑠衣</span>
+              </div>
+              <p class="p-about-content__text">
+                1999年1月生まれ、愛知県育ち。<br />
+                前職では品質保証部にてサプリメントの品質管理業務に従事し、新しい分析手法の導入を主導。その後、社内プロジェクトのリーダーとして業務推進や外部発信に携わる中でITの可能性を実感し、本格的にWeb制作の学習を開始。お客様の要望を形にし、より良いWebを提供するため、学び続けるコーダーとして成長していきます。
+              </p>
+            </div>
+            <img class="p-about__img" src="./img/about.jpg" alt="" />
+            <a href="#" class="c-arrow-link p-about__link">
+              <span class="c-arrow-link__text">view profile</span>
+              <span class="c-arrow-link__arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="l-works l-section u-title-bar u-js-fade">
+        <div class="l-works__inner l-inner">
+          <div class="p-works">
+            <div class="c-section-heading p-works__heading">
+              <h2 class="c-section-heading__main">せいさくじっせき</h2>
+              <p class="c-section-heading__sub">Works</p>
+            </div>
+            <!-- スワイパー -->
+            <div class="swiper-container p-works__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/works-test.png" alt="" class="p-works__img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/works-test.png" alt="" class="p-works__img" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/works-test.png" alt="" class="p-works__img" />
+                </div>
+              </div>
+            </div>
+            <!-- スワイパー -->
+            <div class="p-works__text-link-container">
+              <div class="c-work-text">
+                <p class="c-work-text__1">知識を活かし、試しながら形にする。</p>
+                <p class="c-work-text__2">
+                  試行錯誤重ねて組み上げたWeb制作の記録。
+                </p>
+                <p class="c-work-text__3">
+                  これまでの制作実績をぜひご覧ください。
+                </p>
+              </div>
+              <a href="#" class="c-arrow-link p-works__link">
+                <span class="c-arrow-link__text">view more</span>
+                <span class="c-arrow-link__arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-skills l-section u-title-bar u-js-fade">
+        <div class="l-section-inner l-inner">
+          <div class="p-skills">
+            <div class="c-section-heading p-skills__heading">
+              <h2 class="c-section-heading__main">できること</h2>
+              <p class="c-section-heading__sub">Skills</p>
+            </div>
+            <div class="p-skills__cards">
+              <div class="c-skill-card">
+                <div class="c-skill-card__icon c-skill-card__icon--small">
+                  <img
+                    src="./img/html-5-logo-5121.png"
+                    alt=""
+                    class="c-skill-card__icon-img c-skill-card__icon-img--small"
+                  />
+                  <img
+                    src="./img/css-1.png"
+                    alt=""
+                    class="c-skill-card__icon-img c-skill-card__icon-img--small"
+                  />
+                </div>
+                <div class="c-skill-card__text">
+                  <p class="c-skill-card__text-heading">HTML/CSS</p>
+                  <p class="c-skill-card__text-description">
+                    BEM設計を採用し、一貫性のあるCSS構築が可能です。Sassを活用し、保守性を高めた管理を実現できます。FLOCSSで拡張性の高い設計を行い、レスポンシブ対応で最適なレイアウトを実装できます。
+                  </p>
+                </div>
+              </div>
+              <div class="c-skill-card">
+                <div class="c-skill-card__icon">
+                  <img
+                    src="./img/java-script-logo-1.png"
+                    alt=""
+                    class="c-skill-card__icon-img"
+                  />
+                </div>
+                <div class="c-skill-card__text">
+                  <p class="c-skill-card__text-heading">Javascript/jQuery</p>
+                  <p class="c-skill-card__text-description">
+                    スライダーやドロワーメニューを実装し、操作性を向上できます。アコーディオンやページ内リンクを導入し、スムーズなナビゲーションなどの動きをWebサイトに実装できます。
+                  </p>
+                </div>
+              </div>
+              <div class="c-skill-card">
+                <div class="c-skill-card__icon">
+                  <img
+                    src="./img/word-press-logotype-wmark-1.png"
+                    alt=""
+                    class="c-skill-card__icon-img"
+                  />
+                </div>
+                <div class="c-skill-card__text">
+                  <p class="c-skill-card__text-heading">WordPress/PHP</p>
+                  <p class="c-skill-card__text-description">
+                    静的サイトをWordPressの自作テーマとして構築し、柔軟にカスタマイズできます。PHPを活用して管理を効率化し、更新しやすいサイトを実装できます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-footer">
+        <div class="l-footer__inner">
+          <div class="p-footer">
+            <div class="p-footer__wrapper">
+              <div class="p-footer__nav">
+                <div class="c-section-links">
+                  <ul class="c-section-links__list">
+                    <li class="c-section-links__item">
+                      <a
+                        href="#"
+                        class="c-section-links__link u-hover-opacity--black"
+                        >About</a
+                      >
+                    </li>
+                    <li class="c-section-links__item">
+                      <a
+                        href="#"
+                        class="c-section-links__link u-hover-opacity--black"
+                        >Works</a
+                      >
+                    </li>
+                    <li class="c-section-links__item">
+                      <a
+                        href="#"
+                        class="c-section-links__link u-hover-opacity--black"
+                        >Skills</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-footer__contact-links">
+                <p class="p-footer__contact-links-title">Contact</p>
+                <div class="c-contact-links">
+                  <a
+                    href="mailto:liuyixijiang@gmail.com"
+                    class="c-contact-links__item u-hover-opacity--black"
+                    >liuyixijiang@gmail.com</a
+                  >
+                  <a
+                    href="https://twitter.com/yourtwitter"
+                    class="c-contact-links__item u-hover-opacity--black"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="https://github.com/yourgithub"
+                    class="c-contact-links__item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github u-hover-opacity--black"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <small class="p-footer__copyright">
+              &copy;All Rights Reserved 2025 ©︎ Rui Hosoe
+            </small>
+          </div>
+        </div>
+      </section>
+
+      <div class="c-page-top-btn" id="js-pagetop">
+        <a href="#"><img src="./img/page-top-btn.png" alt="" /></a>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
